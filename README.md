@@ -44,6 +44,7 @@ Base API `http://localhost:8080/`
 	
 		Request:
 			GET http://localhost:8080/getCorelationCoefficen?continent=Europe
+			
 		Response:
 			HTTP Response with correlation coefficient
 
