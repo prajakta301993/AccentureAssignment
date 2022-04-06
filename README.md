@@ -38,7 +38,7 @@ Base API `http://localhost:8080/`
 		Response:
 			HTTP Response with correlation coefficient
 
-- For Getting correlation coefficient for all available countries
+- For Getting correlation coefficient for specific country
 
 	- Any Continent (case sensitive) e.g Europe
 	
