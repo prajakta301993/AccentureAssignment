@@ -25,7 +25,6 @@ Then there are several ways to run a Spring Boot application on your local machi
 Alternatively you can use the `Spring Boot Maven plugin` like so:
 `mvn spring-boot:run`
 
-You can also generate war file using command `mvn install` and depoy it on available servers like `tomcat, jboss , wildfly ` etc.
 
 ##Using the API
 
@@ -36,6 +35,8 @@ Base API `http://localhost:8080/`
 
 		Request:
 			GET http://localhost:8080/getCorelationCoefficen
+		Response:
+			HTTP Response with correlation coefficient
 
 - For Getting correlation coefficient for all available countries
 
@@ -43,6 +44,8 @@ Base API `http://localhost:8080/`
 	
 		Request:
 			GET http://localhost:8080/getCorelationCoefficen?continent=Europe
+		Response:
+			HTTP Response with correlation coefficient
 
 
 
