@@ -28,12 +28,14 @@ public class AccentureService {
 
 		LOGGER.info("Calculating Correlation Coefficent");
 		double sigmaX = 0, sigmaY = 0, sigmaXY = 0, sigmaXX = 0, sigmaYY = 0;
-		int n = casesJson.size() - 1;
+		int n = casesJson.size();
 		float corelationCoefficient = 0;
 		try {
 			for (String key : casesJson.keySet()) {
-				if (!vaccineJson.containsKey(key))
+				if (!vaccineJson.containsKey(key)) {
+					n--;
 					continue;
+				}
 				Map<String, Object> allCases = (Map<String, Object>) casesJson.get(key).get("All");
 				Map<String, Object> allVaccines = (Map<String, Object>) vaccineJson.get(key).get("All");
 				if (!allCases.containsKey("population") || !allCases.containsKey("deaths")
